@@ -1,0 +1,31 @@
+{
+  "name": "coin-flip",
+  "version": "0.0.1",
+  "author": "Ward Oosterlijnck",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --hot --open",
+    "build": "webpack --mode=production",
+    "start": "npm run build && serve ./dist"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "web3": "^0.20.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "dotenv-webpack": "^1.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "serve": "^6.5.6",
+    "style-loader": "^0.21.0",
+    "truffle": "^4.1.7",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
