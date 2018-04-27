@@ -14,7 +14,13 @@ export default class JoinGame extends Component {
       <Fragment>
         <div className="input">
           <label>Who do you want to play against?</label>
-          <input type="text" value={this.state.initiator} onChange={this.changeInitiator} placeholder="0x0000000000000000000000000000000000000000"/>
+          <select value={this.state.initiator} onChange={this.changeInitiator}>
+            {this.props.initiators.map((currentInitiater, index) => (
+              <option key={index} value={currentInitiater}>
+                {currentInitiater}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="select">
           <button onClick={() => this.props.onCheckAddress(this.state.initiator)}>
